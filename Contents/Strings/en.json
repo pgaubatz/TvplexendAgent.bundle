@@ -1,0 +1,8 @@
+{
+    "error_net": "Could not reach the Tvheadend server due to a networking problem.",
+    "error_auth": "The Tvheadend server requires authentication or refuses connections using the provided credentials.",
+    "error_url": "You need to provide the URL of your Tvheadend server.",
+    "error_api": "Tvheadend server too old.",
+    "error_exception": "An exception occured: ",
+    "success": "Successfully connected to Tvheadend server."
+}

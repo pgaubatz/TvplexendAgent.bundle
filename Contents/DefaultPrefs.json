@@ -1,0 +1,27 @@
+[
+    {
+        "id":       "url",
+        "label":    "URL (required)",
+        "type":     "text",
+        "default":  ""
+    },
+    {
+        "id":       "username",
+        "label":    "Username",
+        "type":     "text",
+        "default":  ""
+    },
+    {
+        "id":       "password",
+        "label":    "Password",
+        "type":     "text",
+        "option":   "hidden",
+        "default":  ""
+    },
+    {
+        "id":       "includeDatetimeInTitle",
+        "label":    "Include date and time of recording in title",
+        "type":     "bool",
+        "default":  "false"
+    }
+]
