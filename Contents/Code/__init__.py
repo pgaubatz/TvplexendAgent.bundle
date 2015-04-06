@@ -34,7 +34,9 @@ def ValidatePrefs():
         return False
 
     if Prefs['username'] and Prefs['password']:
-        Dict['auth'] = 'Basic ' + String.Encode(Prefs['username'] + ':' + Prefs['password'])
+        u = Prefs['username']
+        p = Prefs['password']
+        Dict['auth'] = 'Basic ' + String.Encode(u + ':' + p).replace('_', '=')
 
     try:
         info = Tvheadend.ServerInfo()
