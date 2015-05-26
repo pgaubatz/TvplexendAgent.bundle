@@ -17,7 +17,7 @@
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 #
 
-import time
+import base64, time
 
 NAME = 'Tvplexend'
 CACHE_TIME = 60
@@ -38,7 +38,7 @@ def ValidatePrefs():
     if Prefs['username'] and Prefs['password']:
         u = Prefs['username']
         p = Prefs['password']
-        Dict['auth'] = 'Basic ' + String.Encode(u + ':' + p).replace('_', '=')
+        Dict['auth'] = 'Basic ' + base64.b64encode(u + ':' + p)
 
     try:
         info = Tvheadend.ServerInfo()
