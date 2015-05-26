@@ -33,6 +33,8 @@ def ValidatePrefs():
         Log.Error(L('error_url'))
         return False
 
+    Dict['auth'] = None
+
     if Prefs['username'] and Prefs['password']:
         u = Prefs['username']
         p = Prefs['password']
